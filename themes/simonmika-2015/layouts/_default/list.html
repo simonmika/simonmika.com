@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+{{ partial "head" . }}
+</head>
+<body>
+	<header>
+	{{ partial "header" . }}
+	</header>
+	<nav>
+	{{ partial "menu" .Site.Menus.main }}
+	</nav>
+	{{ range where .Data.Pages "Source.Path" "index.md" }}
+	<article>
+		<header><h1>{{ .Title }}</h1></header>
+		<main>
+		{{ .Content }}
+		</main>
+		<footer></footer>
+	</article>
+	{{ end }}
+	<footer>
+	{{ partial "footer" . }}
+	</footer>
+	{{ partial "foot" . }}
+</body>
+</html>
