@@ -1,15 +1,11 @@
 ---
-date: "2015-06-19T14:32:03+01:00"
-title: "About"
+date: 2016-08-18T20:00:09+02:00
+draft: true
 menu:
   main:
-    weight: 50
-    name: "about"
+    weight: 100
+title: About
 ---
-The best way to contact me is to use the contact form below.
+Hi,
 
-# Address
-Simon Mika
-Tegelgatan 29
-752 39 Uppsala
-Sweden
+I am Simon Mika, and I create things. Proffesionally I create software products. Either hands on or by creating the organisation that builds the products.

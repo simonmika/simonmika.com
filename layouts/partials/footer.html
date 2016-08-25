@@ -1,0 +1,10 @@
+			<nav>
+{{ partial "menu.html" .Site.Menus.main }}
+			</nav>
+			<main>
+{{ range where .Site.Pages "Section" "article" }}
+				<article>
+{{ partial "article" (dict "article" . "mode" "header") }}
+				</article>
+{{ end }}
+			</main>

@@ -1,0 +1,16 @@
+baseurl: http://simonmika.com/
+languageCode: en-us
+title: "Simon says"
+theme: hugo-theme-html5
+MetaDataFormat: yaml
+params:
+  Description: "truths, opinions and preconceptions"
+  Logotype: "img/logotype.svg"
+  CSS:
+    - "css/text.css"
+    - "css/color.css"
+    - "css/layout.css"
+  ListMode: "title"
+  FrontPageMode: "title"
+  FrontPageSection: "article"
+  NavigationInHeader: true
