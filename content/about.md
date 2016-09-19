@@ -6,6 +6,4 @@ menu:
     weight: 100
 title: About
 ---
-Hi,
-
 I am Simon Mika, and I create things. Proffesionally I create software products. Either hands on or by creating the organisation that builds the products.

@@ -1,8 +1,6 @@
 ---
-categories: []
 date: 2016-08-18T21:31:21+02:00
 draft: true
-subject: general
 tags: []
 title: To Live
 ---
