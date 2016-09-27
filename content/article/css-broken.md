@@ -30,11 +30,13 @@ Let us consider a simple example:
 	<body>
 </html>
 ```
-
+Why should I need to change the markup if I want to render the header and nav elements together as one unit. Today I still need to change my markup in order to achieve the layout I want. That is kind of broken as it defeats the purpose of separating style from content.
 
 CSS needs a way to change:
+
 1. The order of elements.
 2. The nesting of elements.
 3. Combine elements under a new parent.
+4. Turn an element into a link.
 
-Another thing that is broken is links. For something to be navigatable it has to be surrounded by an anchor tag.
+So far I no clue how that would look in CSS. Maybe it is time for something totaly new.
