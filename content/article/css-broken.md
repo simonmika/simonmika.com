@@ -1,6 +1,5 @@
 ---
 date: 2016-08-18T23:18:43+02:00
-draft: true
 tags: ["css", "html"]
 title: CSS is Still Broken
 ---
@@ -39,4 +38,4 @@ CSS needs a way to change:
 3. Combine elements under a new parent.
 4. Turn an element into a link.
 
-So far I no clue how that would look in CSS. Maybe it is time for something totaly new.
+So far I no clue how that would look in CSS. Maybe it is time for something totally new.

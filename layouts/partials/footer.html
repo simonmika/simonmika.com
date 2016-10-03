@@ -2,9 +2,9 @@
 {{ partial "menu.html" .Site.Menus.main }}
 			</nav>
 			<main>
-{{ range where .Site.Pages "Section" "article" }}
-				<article>
+{{ range first 5 (where .Site.Pages "Section" .Site.Params.FrontPageSection) }}
+			<article>
 {{ partial "article" (dict "article" . "mode" "header") }}
-				</article>
+			</article>
 {{ end }}
 			</main>

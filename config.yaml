@@ -10,8 +10,15 @@ params:
     - "css/text.css"
     - "css/color.css"
     - "css/layout.css"
+    - "css/form.css"
   ListMode: "title"
   FrontPageMode: "title"
   FrontPageSection: "article"
   NavigationInHeader: true
 googleAnalytics: "UA-83177710-2"
+paginate: 5
+menu:
+  main:
+    - name: "Articles"
+      weight: 10
+      URL: "/"
