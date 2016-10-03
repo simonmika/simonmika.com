@@ -22,3 +22,4 @@ menu:
     - name: "Articles"
       weight: 10
       URL: "/"
+disqusShortname: "simonmika"
