@@ -9,4 +9,4 @@ While a do realize where this comes from. A good programmer can easily be more t
 
 But programming is almost never a one man show. Most real world projects are impossible to finish yourself within a reasonable time. They are team efforts. Therefore a real programming hero is a someone who not only is a very productive expert but who also helps the rest of the team to reach their full potential by mentoring and encouraging them.
 
-The rock star attitude is the opposite of the humble and encouraging attitude a good mentor. So let us stop taking about code ninjas as a good thing and instead let us celebrate the mentors.
+The rock star attitude is the opposite of the humble and encouraging attitude a good mentor. So let us stop talking about code ninjas as a good thing and instead let us celebrate the mentors.
