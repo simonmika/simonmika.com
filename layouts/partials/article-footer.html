@@ -1,3 +1,3 @@
-{{ if and (in .Site.BaseURL "localhost") (and .IsPage (eq .Section "article")) }}
+{{ if and (not (in .Site.BaseURL "localhost")) (and .IsPage (eq .Section "article")) }}
 {{ template "_internal/disqus.html" . }}
 {{ end }}
