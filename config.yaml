@@ -11,6 +11,7 @@ params:
     - "css/color.css"
     - "css/layout.css"
     - "css/form.css"
+    - "css/blockquotes.css"
   ListMode: "title"
   FrontPageMode: "title"
   FrontPageSection: "article"
