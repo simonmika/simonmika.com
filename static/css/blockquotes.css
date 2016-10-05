@@ -48,6 +48,12 @@ body > main > article > main blockquote > *:not(.share):after {
 .share.linkedin:after {
 	content: "ą";
 }
+.share.facebook:after {
+	content: "v";
+}
+.share.googleplus:after {
+	content: "Ć ";
+}
 @media screen and (min-width: 640px) {
 	body > main > article > main blockquote {
 		float: right;
