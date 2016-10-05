@@ -2,3 +2,7 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
 		<script src="{{ .Site.BaseURL }}js/share-blockquotes.js" async defer></script>
+		<meta property="og:title" content="{{ .Title }}" />
+		<meta property="og:description" content="{{ .Summary }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{{ .Permalink }}" />

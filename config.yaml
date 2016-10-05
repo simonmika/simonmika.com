@@ -16,6 +16,8 @@ params:
   FrontPageMode: "title"
   FrontPageSection: "article"
   NavigationInHeader: true
+  Prefix:
+    - "og: http://opy.me/ns#"
 googleAnalytics: "UA-83177710-2"
 paginate: 5
 menu:
