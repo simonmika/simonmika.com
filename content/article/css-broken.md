@@ -1,6 +1,6 @@
 ---
 date: 2016-08-18T23:18:43+02:00
-tags: ["css", "html"]
+tags: ["web"]
 title: CSS is Still Broken
 ---
 
