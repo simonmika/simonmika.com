@@ -19,7 +19,7 @@ params:
   Prefix:
     - "og: http://opy.me/ns#"
 googleAnalytics: "UA-83177710-2"
-paginate: 5
+paginate: 100
 menu:
   main:
     - name: "Articles"
