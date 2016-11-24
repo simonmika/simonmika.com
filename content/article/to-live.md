@@ -2,7 +2,7 @@
 date: 2016-08-18T21:31:21+02:00
 tags: []
 title: To Live
-draft = true
+draft: true
 ---
 
 Life is about three things:

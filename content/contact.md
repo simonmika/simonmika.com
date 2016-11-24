@@ -1,7 +1,7 @@
 ---
 menu:
-  main:
-    weight: 90
+	main:
+		weight: 90
 title: Contact
 ---
 Don't hesitate to contact me with ideas, suggestions and opinions. I look forward to hear from you.
