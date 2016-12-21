@@ -8,9 +8,9 @@ label {
 	display: block;
 	margin-bottom: 0.2em;
 }
-input, textarea {
+input,
+textarea {
 	display: block;
-	width: calc(100% - 2em);
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	/* To harmonize the look & feel of text field border */
@@ -23,4 +23,16 @@ input, textarea {
 input:focus, textarea:focus {
 	/* To give a little highlight on active elements */
 	border-color: #000;
+}
+main > article > main input,
+main > article > main textarea {
+	width: calc(100% - 2em);
+}
+nav input[type=email] {
+	float: left;
+	max-width: calc(50% - 1em);
+}
+nav input[type=submit] {
+	float: left;
+	max-width: calc(50% - 1em);
 }
