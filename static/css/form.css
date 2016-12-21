@@ -28,11 +28,25 @@ main > article > main input,
 main > article > main textarea {
 	width: calc(100% - 2em);
 }
-nav input[type=email] {
-	float: left;
-	max-width: calc(50% - 1em);
+nav form {
+	float: right;
+	padding: 2em;
 }
-nav input[type=submit] {
+nav form > input {
 	float: left;
-	max-width: calc(50% - 1em);
+	margin-bottom: 0;
+	border-color: #a40000;
+}
+nav form > input[type=email] {
+	border-right: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	width: calc(100% - 6em);
+}
+nav form > input[type=submit] {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	width: 6em;
+	color: #eeeeec;
+	background-color: #a40000;
 }
