@@ -12,8 +12,8 @@ params:
     - "css/layout.css"
     - "css/form.css"
     - "css/blockquotes.css"
-  ListMode: "title"
-  FrontPageMode: "title"
+  ListMode: "header"
+  FrontPageMode: "header"
   FrontPageSection: "article"
   NavigationInHeader: true
   Prefix:

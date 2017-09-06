@@ -1,5 +1,5 @@
 			<nav>
-{{ partial "menu.html" .Site.Menus.main }}
+{{ partial "menu.html" (dict "node" . "menu" .Site.Menus.main) }}
 			</nav>
 			<main>
 {{ if .IsHome }}
