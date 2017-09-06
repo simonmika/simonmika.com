@@ -9,9 +9,18 @@
 	// When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
 	"editor.detectIndentation": false,
 
-	// Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping (word wrapping). Setting this to -1 forces the editor to never wrap.
-	"editor.wrappingColumn": 0,
-
 	// When enabled, will trim trailing whitespace when you save a file.
-	"files.trimTrailingWhitespace": true
+	"files.trimTrailingWhitespace": true,
+	"spellchecker.language": "en_US",
+	"spellchecker.ignoreWordsList": [
+		"Mika"
+	],
+	"spellchecker.documentTypes": [
+		"markdown",
+		"latex",
+		"plaintext"
+	],
+	"spellchecker.ignoreRegExp": [],
+	"spellchecker.ignoreFileExtensions": [],
+	"spellchecker.checkInterval": 5000
 }
