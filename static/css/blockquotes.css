@@ -63,6 +63,9 @@ body > main > article > main blockquote > *:not(.share):after {
 .share.googleplus:after {
 	content: "Ć ";
 }
+.share.email:after {
+	content: "É";
+}
 @media screen and (min-width: 480px) {
 	body > main > article > main blockquote {
 		margin-left: calc(-10vw * .63);
