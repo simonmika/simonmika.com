@@ -1,3 +1,6 @@
 [submodule "themes/hugo-theme-html5"]
 	path = themes/hugo-theme-html5
 	url = https://github.com/simonmika/hugo-theme-html5
+[submodule "static/reveal.js"]
+	path = static/reveal.js
+	url = https://github.com/cogneco/reveal.js

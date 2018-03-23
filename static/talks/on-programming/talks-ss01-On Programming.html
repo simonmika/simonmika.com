@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>On Programming</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Simon Mika">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../../reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="../../reveal.js/css/theme/night.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../../reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+			.reveal table td {
+				text-align: inherit;
+			}
+			.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal h7 {
+				text-transform: none;
+			}
+			.reveal section img {
+				border: none;
+				box-shadow: none;
+			}
+			.reveal pre,
+			.reveal code {
+				tab-size: 2;
+				-moz-tab-size: 2;
+			}
+			.reveal section img {
+				background: none;
+			}
+			.reveal a {
+			color: #ef2929;
+			}
+			.reveal a:hover {
+			color: #cc0000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<img src="../../style/cogneco-v6w.svg">
+					<h6>On Programming</h6>
+					<p>
+						<small>Simon Mika, <a href="http://cogneco.com">Cogneco AB</a></small>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h1>Simon Mika</h1>
+					</section>
+					<section data-background-iframe="http://vidhance.com">
+					</section>
+					<section data-background-color="#000000" data-background-video="./figures/simonmika/AutoZoom-KiteSurf.webm" data-background-video-muted="true" data-background-size="cover">
+					</section>
+					<section data-background-iframe="http://cogneco.com">
+					</section>
+					<section data-background-iframe="http://simonmika.com">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Productivity<br>vs<br>Efficiency</h1>
+					</section>
+					<section>
+						<h2>The Semantic Gap</h2>
+						<img src="figures/productivityEfficiency/semanticGap.svg">
+						<p>The difference between what humans understand and computers.</p>
+					</section>
+					<section>
+						<h2>The Semantic Gap</h2>
+						<img src="figures/productivityEfficiency/semanticGapProgramming.svg">
+						<img class="fragment fade-in" src="figures/productivityEfficiency/productivityEfficiency.svg">
+					</section>
+					<section>
+						<img src="figures/productivityEfficiency/plotEmpty.svg">
+					</section>
+					<section>
+						<img src="figures/productivityEfficiency/plotAxis.svg">
+					</section>
+					<section>
+						<img src="figures/productivityEfficiency/plotLanguages.svg">
+					</section>
+					<section>
+						<img src="figures/productivityEfficiency/plotLanguagesFuture.svg">
+					</section>
+					<section>
+						<img src="figures/productivityEfficiency/plotES.svg">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>The Blub Paradox</h1>
+						<p><a href="http://www.paulgraham.com/avg.html">Beating the Averages</a> by <a href="http://paulgraham.com">Paul Graham</a></p>
+					</section>
+					<section>
+						<blockquote>"Programming Languages Vary in Power"</blockquote>
+					</section>
+					<section>
+						<h3>Abstractness Continuum</h3>
+						<img src="figures/blub/abstractnessContiniuum.svg">
+					</section>
+					<section>
+						<img src="figures/blub/blub.svg">
+					</section>
+					<section>
+						<img src="figures/blub/blub2.svg">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Superstitious Programmers</h1>
+					</section>
+					<section data-background="figures/cargoCult/cargoKids.jpg"></section>
+					<section>
+							<pre><code data-trim data-noescape>
+function isFive(value: number) {
+	return value === 5
+}
+							</code></pre>
+					</section>
+					<section>
+						<pre><code data-trim data-noescape>
+public class Car {
+	bool safe;
+	public bool IsSafe() {
+		if (this.safe == true)
+			return true;
+		else
+			return false;
+	}
+	public bool IsUnsafe() {
+		return this.safe != true;
+	}
+}
+						</code></pre>
+					</section>
+					<section>
+							<pre><code data-trim data-noescape>
+public class Car {
+	private string m_szBrand
+	private int m_nSeats;
+	public Car(string brand, int seats) {
+		this.m_szBrand = brand;
+		this.m_nSeats = seats;
+	}
+}
+							</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Encapsulating &amp; Abstracting</h1>
+					</section>
+					<section>
+						<pre><code data-trim data-noescape>
+#include &lt;stdio.h&gt;
+#define SPEEDLIMIT 55
+#define RATE 15
+#define FIRST_TICKET 85
+int main()
+{
+		int total,fine,speeding;
+		speeding = FIRST_TICKET - SPEEDLIMIT;
+		fine = speeding * RATE;
+		total = total + fine;
+		printf("For going %d in a %d zone: $%dn",
+			FIRST_TICKET,SPEEDLIMIT,fine);
+		printf("nTotal in fines: $%dn",total);
+		return(0);
+}
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Lowest Common Denominator</h1>
+					</section>
+					<section>
+							<pre><code data-trim data-noescape>
+								let a = b || (a &amp;&amp; c)
+							</code></pre>
+						</section>
+						<section>
+								<pre><code data-trim data-noescape>
+									let a = (b - (a * c))
+								</code></pre>
+						</section>
+					<section>
+							<pre><code data-trim data-noescape>
+								function maximum(a, b) {
+									if (a < b) 
+										return a;
+									else
+										return b;
+								}
+							</code></pre>
+					</section>
+					<section>
+							<pre><code data-trim data-noescape>
+								function maximum(a, b) {
+									return a < b ? a : b;
+								}
+							</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Design Patterns</h1>
+						<p>instead of a better language</p>
+					</section>
+					<section>
+						<pre><code data-trim data-noescape style="max-height: none">
+public class Car: IEquatable&lt;Car&gt; {
+	public string Brand { get; }
+	public int Seats { get; }
+	public Car(string brand, int seats) {
+		this.Brand = brand;
+		this.Seats = seats;
+	}
+}
+						</code></pre>
+					</section>
+					<section>
+						<pre><code data-trim data-noescape style="max-height: none">
+public class Car: IEquatable&lt;Car&gt; {
+	public string Brand { get; }
+	public int Seats { get; }
+	public Car(string brand, int seats) {
+		this.Brand = brand;
+		this.Seats = seats;
+	}
+	public override int GetHash() {
+		return (this.Brand?.GetHash() ?? 0) * 31 + 
+			this.Seats.GetHash())
+	}
+	public override bool Equals(object other) {
+		return this.Equals(other as Car)
+	}
+	public bool Equals(Car other) {
+		return object.ReferenceEquals(other, null) &amp;&amp; 
+			this.Brand == other.Brand &amp;&amp; 
+			this.Seats == other.Seats;
+	}
+	public static operator bool ==(Car left, Car right) {
+		return object.ReferenceEquals(left, right) || 
+			!object.ReferenceEquals(left, null) &amp;&amp; 
+			left.Equals(right);
+	}
+	public static operator bool !=(Car left, Car right) {
+		return !(left == right);
+	}
+}
+						</code></pre>
+					</section>
+					<section>
+						<pre><code data-trim data-noescape style="max-height: none">
+public class Singleton
+{
+		private static Singleton instance;
+
+		private Singleton() {}
+
+		public static Singleton Instance
+		{
+			get 
+			{
+					if (instance == null)
+					{
+						instance = new Singleton();
+					}
+					return instance;
+			}
+		}
+}
+						</code></pre>
+					</section>
+					<section>
+							<pre><code data-trim data-noescape style="max-height: none">
+	using System;
+	
+	public class Singleton
+	{
+			Singleton() {}
+			public static Singleton Instance { get; } = new Singleton();
+	}
+							</code></pre>
+						</section>
+					</section>
+<!-- 				<section>
+					<section>
+						<h1>The Man-Month</h1>
+						<h5>by <a href="https://en.wikipedia.org/wiki/Fred_Brooks">Fred Brooks</a></h5>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Recruiting with Cross Words</h1>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Tests as Contracts</h1>
+					</section>
+				</section>
+ -->				<section>
+					<img src="../../style/cogneco-v6w.svg">
+					<p>
+						<small>Simon Mika, <a href="http://cogneco.com">Cogneco AB</a></small>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../reveal.js/lib/js/head.min.js"></script>
+		<script src="../../reveal.js/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../../reveal.js/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

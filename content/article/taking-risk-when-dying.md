@@ -3,7 +3,7 @@ date: 2017-08-23T09:15:00+02:00
 tags: ["startup"]
 title: Taking Risk When Dying
 ---
-In the beginning most startups are like fatally ill patients. The are companies without a business.
+In the beginning most startups are like fatally ill patients. They are companies without a business.
 
 When people are fatally ill in a deadly decease with no cure they tend to willing to try any potential cure, no matter how untested, experimental or even dangerous and life threating it might be. After all they are anyhow dying so they have nothing to loose and can therefore take immense risks.
 

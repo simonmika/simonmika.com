@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>TypeScript</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="Simon Mika">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="../../reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="../../reveal.js/css/theme/night.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="../../reveal.js/lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	<style>
+		.reveal a { color: inherit }
+		a[href^="http"]:after {
+			content: " " attr(href);
+			font-size: 0.75em;
+		}
+		.reveal table td {
+			text-align: inherit;
+		}
+
+		.reveal h1,
+		.reveal h2,
+		.reveal h3,
+		.reveal h4,
+		.reveal h5,
+		.reveal h6,
+		.reveal h7 {
+			text-transform: none;
+		}
+
+		.reveal section img {
+			border: none;
+			box-shadow: none;
+		}
+
+		.reveal pre,
+		.reveal code {
+			tab-size: 2;
+			-moz-tab-size: 2;
+		}
+
+		.reveal section img {
+			background: none;
+		}
+
+		.reveal a {
+			color: inherit;
+		}
+
+		.reveal a:hover {
+			color: #cc0000;
+		}
+		.reveal .small,
+		.reveal .small pre {
+			font-size: 0.75em;
+		}
+	</style>
+</head>
+
+<body>
+		<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<img src="../../style/cogneco-v6w.svg">
+			</section>
+			<section>
+				<h1>How I use TypeScript</h1>
+				<h4>Simon Mika</h4>
+			</section>
+			<section>
+				<section>
+					<h1>Simon Mika</h1>
+				</section>
+				<section>
+					<img src="../../style/cogneco-v6w.svg">
+				</section>
+				<section>
+					<h2>Mentor</h2>
+					<ul>
+						<li class="fragment">development managers</li>
+						<li class="fragment">project managers</li>
+						<li class="fragment">product managers</li>
+						<li class="fragment">lead developers</li>
+						<li class="fragment">scrum masters</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Advice</h2>
+					<ul>
+						<li class="fragment">agile development</li>
+						<li class="fragment">lean startup methology</li>
+						<li class="fragment">system architecture</li>
+						<li class="fragment">developer recruitement</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Build</h2>
+					<h4>Organization &amp; Product</h4>
+					<ul>
+						<li class="fragment">interim management</li>
+						<li class="fragment">recruitement</li>
+						<li class="fragment">turn key projects &amp; prototypes</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>What is TypeScript?</h1>
+				</section>
+				<section data-background-iframe="https://www.typescriptlang.org">
+				</section>
+				<section>
+					<h2>What is TypeScript?</h2>
+					<ul>
+						<li class="fragment">Superset of ECMAScript.</li>
+						<li class="fragment">Optional static typing.</li>
+						<li class="fragment">Outputs plain JavaScript.</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Tool for large scale JavaScript projects.</h5>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Tooling</h1>
+				</section>
+				<section>
+					<h2>Errors</h2>
+					<img src="./figures/tooling/error.png">
+				</section>
+				<section>
+					<h2>Auto Complete</h2>
+					<img src="./figures/tooling/autoComplete.png">
+				</section>
+				<section>
+					<h2>Go to Definition</h2>
+					<img src="./figures/tooling/goToDefinition.png">
+				</section>
+				<section>
+					<h2>Peek Definition</h2>
+					<img src="./figures/tooling/peekDefinition.png">
+				</section>
+				<section>
+					<h2>Rename Symbol</h2>
+					<img src="./figures/tooling/renameSymbol.png">
+				</section>
+				<section>
+					<h2>Debug</h2>
+					<img src="./figures/tooling/debug.png">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Configuration</h1>
+				</section>
+				<section>
+					<h2>Tools</h2>
+					<pre><code data-trim data-noescape>
+						npm install --save-dev typescript tslint np watch
+					</code></pre>
+				</section>
+				<section>
+					<h2>Types</h2>
+					<pre><code data-trim data-noescape>
+						npm install --save-dev @types/node
+					</code></pre>
+				</section>
+				<section>
+					<h2><code>package.json</code></h2>
+					<pre><code data-trim data-noescape class="small">
+						{
+							"scripts": {
+								"dev": "watch 'npm run build' source",
+								"prebuild": "tslint --config .vscode/tslint.json --project source/tsconfig.json",
+								"build": "tsc -p source",
+								"pretest": "npm run build",
+								"test": "node build/index.test.js",
+								"test:watch": "watch 'npm test' source",
+								"prepublish": "npm run build",
+								"release": "np",
+								"clean": "rm -rf build node_modules"
+							}
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2><code>tsconfig.json</code></h2>
+					<pre><code data-trim data-noescape class="small">
+						{
+							"compilerOptions": {
+								"target": "es6",
+								"module": "commonjs",
+								"declaration": true,
+								"sourceMap": true,
+								"sourceRoot": "../source",
+								"outDir": "../build/"
+							},
+							"files": [
+								"index.ts",
+								"index.test.ts"
+							]
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2><code>tsconfig.json</code> (cont.)</h2>
+					<pre><code data-trim data-noescape class="small">
+						{
+							"compilerOptions": {
+								"noImplicitAny": true,
+								"removeComments": true,
+								"preserveConstEnums": true,
+								"strict": true,
+								"alwaysStrict": true,
+								"strictNullChecks": true,
+								"forceConsistentCasingInFileNames": true,
+								"noImplicitThis": true,
+								"noUnusedLocals": true,
+							}
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2><code>.vscode/task.json</code></h2>
+					<pre><code data-trim data-noescape class="small">
+						{
+							"version": "0.1.0", "command": "npm", "isShellCommand": true,
+							"showOutput": "always", "suppressTaskName": true,
+							"tasks": [
+								{
+									"taskName": "build", "args": ["run", "build"],
+									"isBuildCommand": true,
+									"problemMatcher": [ "$tsc", "$tslint5" ]
+								},
+								{
+									"taskName": "test", "args": ["run", "test"],
+									"isTestCommand": true, "problemMatcher": [ "$tsc", "$tslint5" ]
+								}
+							]
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2><code>.vscode/launch.json</code></h2>
+					<pre><code data-trim data-noescape class="small">
+						{
+							"version": "0.2.0",
+							"configurations": [
+								{
+									"type": "node", "request": "launch", "protocol": "inspector",
+									"name": "c99-build",
+									"preLaunchTask": "build",
+									"program": "${workspaceRoot}/build/index.js",
+									"args": [ "c99-build", "${workspaceRoot}/example/function.syspl" ],
+									"sourceMaps": true,
+									"outFiles": [ "${workspaceRoot}/build/**/*.js" ]
+								}
+							]
+						}
+					</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>Type System</h1>
+				</section>
+				<section>
+					<h2>Types are Optional</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						function f(x) {
+							return x
+						}
+					</code></pre>
+					<p class="fragment">Unless <code>"noImplicitAny": true</code></p>
+				</section>
+				<section>
+					<h2>Type Interference</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						const name = "Name"
+						const message = name
+						const data = ["mixed data", 1, 2, true, null]
+					</code></pre>
+				</section>
+				<section>
+					<h2>Type Expressions</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						let name: string
+						let age: number
+						let names: string[]
+						let onlyObjects: Object
+						function f(x: int): int {
+							return x ** x
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Type Expressions (cont.)</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						let whatever: any
+						let alwaysUndefined: undefined
+						let alwaysNull: null
+						function loopForever(): never {
+							while (true) { }
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Object Type Expressions</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						let record: { name: string, age: number }
+						let records: { name: string, age: number }[]
+					</code></pre>
+				</section>
+				<section>
+					<h2>Type Alias</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						type Record = { name: string, age: number }
+						let record: Record
+						let records: Record[]
+					</code></pre>
+				</section>
+				<section>
+					<h2>Function Type Expressions</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						let play: (position: number) => Promise<boolean>
+						function f(x: (position: number) => boolean): void {
+							if (position > 0 && x(position)
+								alert("playing")
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Tuple</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						let record: [string, number]
+						record = ["Smith", 38]
+						record[1]++
+					</code></pre>
+				</section>
+				<section>
+					<h2>Enum</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						enum Color { Red, Green, Blue, White = 255 }
+						let color: Color
+						color = Color.Green
+					</code></pre>
+				</section>
+				<section>
+					<h2>Type Assertions</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						let a: any = 5
+						let b = a as number
+					</code></pre>
+					<pre class="fragment"><code data-trim data-noescape>
+						let c = <number>a
+					</code></pre>
+				</section>
+				<section>
+					<h2>Intersection Types</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						type Record = { name: string, age: number }
+						let extendedRecord: Record & { email: string }
+					</code></pre>
+				</section>
+				<section>
+					<h2>Union Types</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						type Record = { name: string, age: number }
+						let data: Record | string = "Foo"
+						data = { "Bar", 42 }
+					</code></pre>
+				</section>
+				<section>
+					<h2>String Literal Types</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						let encoding: "utf8" | "ascii" | "utf16"
+						encoding = "utf8"
+						encoding = "blabla" // compile error
+					</code></pre>
+				</section>
+				<section>
+					<h2>Numeric Literal Types</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						let grade: 1 | 2 | 3 | 4 | 5
+						grade = 3
+						grade = 6 // compile error
+					</code></pre>
+				</section>
+				<section>
+					<h2>Strict Null Checks</h1>
+					<p class="fragment"><code>"strictNullChecks": true,</code></p>
+					<pre class="fragment"><code data-trim data-noescape>
+						function log(data: number[]) {
+							alert("values: " + data.map(d => d.toString().join(", "))
+						}
+						log([42, 13.37])
+						log([])
+						log(null) // compile time error
+					</code></pre>
+					<p class="fragment">Fixes Tony Hoare billion dollar mistake.</p>
+				</section>
+				<section>
+					<h2>When Null is Wanted</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						function log(data: number[] | null | undefined) {
+							if (data) // type guard required
+								alert("values: " + data.map(d => d.toString().join(", "))
+						}
+						log([42, 13.37])
+						log([])
+						log(null) // no error
+					</code></pre>
+				</section>
+				<section>
+					<h2>When Undefined is Wanted</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						function log(data?: number[]) {
+							if (data) // type guard required
+								alert("values: " + data.map(d => d.toString().join(", "))
+						}
+						log(undefined) // no error
+					</code></pre>
+				</section>
+				<section>
+					<h2>Type Guards</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						function f(data: number | Record | null | string): string {
+							return
+								typeof(data) == "number" ? (data ** data).toString() :
+								data instanceof Record ? data.age.toString() :
+								data || "null"
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Custom Type Guards</h1>
+					<pre class="fragment"><code data-trim data-noescape>
+						function hasName(data: any) data is { name: string } & any {
+							return typeof((data as { name: string }).name) == "string"
+						}
+					</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Modules</h1>
+					<h3 class="fragment">ECMAScript-style</h3>
+				</section>
+				<section>
+					<h2>Export</h2>
+					<pre><code data-trim data-noescape>
+						export class Test { }
+						export function RunTest() {}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Re-export<code>index.ts</code></h2>
+					<pre><code data-trim data-noescape>
+						export { Test } from "./Test"
+					</code></pre>
+				</section>
+				<section>
+					<h2>Re-re-export
+						<code>index.ts</code>
+					</h2>
+					<pre><code data-trim data-noescape>
+							import * as NameSpace from "./NameSpace"
+							export {
+								NameSpace,
+							}
+						</code></pre>
+				</section>
+				<section>
+					<h2>Import</h2>
+					<pre><code data-trim data-noescape>
+						import * as NameSpace from "./NameSpace"
+						new NameSpace.Test()
+					</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Object Orientation</h1>
+					<h3 class="fragment">ECMAScript<span class="fragment"> + extra</span></h3>
+				</section>
+				<section>
+					<h2>Classes</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export class Test {
+							constructor() { }
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Inheritance</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export class Base {
+							constructor() { }
+						}
+					</code></pre>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						import { Base } from "./Base"
+						export class Test extends Base {
+							constructor() {
+								super()
+							}
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Abstract Class</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export abstract class Base {
+							protected constructor() { }
+							abstract doThing()
+						}
+					</code></pre>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						import { Base } from "./Base"
+						export class Test extends Base {
+							constructor() {
+								super()
+							}
+							doThing() { }
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Access Modifiers</h2>
+					<p class="fragment"><code>public</code> by default</p>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export class Test {
+							protected constructor() { }
+							private doSomething() { }
+							protected doSomethingElse() { }
+						}
+					</code></pre>
+					<p class="fragment">compile time only - public when running</p>
+				</section>
+				<section>
+					<h2>Properties</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export class Test {
+							name: string
+							constructor() { }
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Private / Protected Properties</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export class Test {
+							private name: string
+							protected description: string
+							constructor() { }
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Read Only Properties</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export class Test {
+							readonly name: string
+							readonly description = "Directly initialized value"
+							constructor() {
+								this.name = "Constructor initialized value"
+							}
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Constructor Properties</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export class Test {
+							constructor(readonly name: string, private last = "", public value?: number) {
+							}
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Interfaces</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export interface Order {
+							count: number
+							price: number
+							volume: number
+						}
+					</code></pre>
+					<p class="fragment">Good for receiving JSON-data.</p>
+				</section>
+				<section>
+					<h2>Interfaces with Methods</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						export interface Handler {
+							raise: {
+								(message: Message): void
+								(message: string, level?: Level, type?: string, region?: Region): void
+							}
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Explicit Implementation</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						import { Handler } from "./Handler"
+
+						export class ConsoleHandler implements Handler {
+							raise(message: string | Message, level?: Level, type?: string, region?: Region): void {
+								if (!(message instanceof Message))
+									message = new Message(message as string, level, type, region)
+								console.error(message.toString())
+							}
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Functions Interfaces</h2>
+					<pre class="fragment"><code data-trim data-noescape class="small">
+						interface Search {
+							(source: string, needle: string): boolean;
+						}
+					</code></pre>
+				</section>
+			</section>
+			<section>
+				<h2>Read More</h2>
+				<ul class="small">
+					<li><a href="http://www.typescriptlang.org/docs/handbook/basic-types.html">TypeScript Handbook</a></li>
+					<li><a href="https://github.com/cogneco/mend">Mend repo</a></li>
+					<li><a href="https://github.com/syspl/syspl">SysPL Compiler repo</a></li>
+					<li><a href="https://github.com/simonmika/stockint">StockInt repo</a></li>
+					<li><a href="https://github.com/simonmika/stockint-ui">StockInt UI repo (angular)</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Conclusions &amp; Questions</h2>
+			</section>
+			<section>
+				<img src="../../style/cogneco-v6w.svg">
+				<p><small>Simon Mika</small></p>
+			</section>
+		</div>
+	</div>
+
+	<script src="../../reveal.js/lib/js/head.min.js"></script>
+	<script src="../../reveal.js/js/reveal.js"></script>
+
+	<script>
+
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: false,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: '../../reveal.js/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: '../../reveal.js/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: '../../reveal.js/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: '../../reveal.js/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: '../../reveal.js/plugin/zoom-js/zoom.js', async: true },
+				{ src: '../../reveal.js/plugin/notes/notes.js', async: true }
+			]
+		});
+
+	</script>
+
+</body>
+
+</html>
