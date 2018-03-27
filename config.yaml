@@ -27,5 +27,5 @@ menu:
       URL: "/"
     - name: "Talks"
       weight: 20
-      URL: "/talks"
+      URL: "/talk"
 disqusShortname: "simonmika"
