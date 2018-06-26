@@ -6,7 +6,7 @@ resources :
 - src : "./talks-ss03-Recruiting.html"
   name : "slides"
 ---
-A step by step guide on how to recruite programmers inkluding checklists and what to do and not to do. It also covers some insight what you can do to improve the likelyhood of becomming recruited.
+A step by step guide on how to recruit programmers including checklists and what to do and not to do. It also covers some insight what you can do to improve the likelihood of becoming recruited.
 
 # Slides
 

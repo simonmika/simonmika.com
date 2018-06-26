@@ -22,5 +22,12 @@
 	],
 	"spellchecker.ignoreRegExp": [],
 	"spellchecker.ignoreFileExtensions": [],
-	"spellchecker.checkInterval": 5000
+	"spellchecker.checkInterval": 5000,
+	"spellright.language": "en_US",
+	"spellright.documentTypes": [
+		"markdown",
+		"latex",
+		"plaintext",
+		"html"
+	]
 }
