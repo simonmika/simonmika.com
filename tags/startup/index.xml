@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startup on Simon says</title>
+    <link>//simonmika.com/tags/startup/</link>
+    <description>Recent content in Startup on Simon says</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Aug 2017 09:15:00 +0200</lastBuildDate>
+    
+	<atom:link href="//simonmika.com/tags/startup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Taking Risk When Dying</title>
+      <link>//simonmika.com/article/taking-risk-when-dying/</link>
+      <pubDate>Wed, 23 Aug 2017 09:15:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/taking-risk-when-dying/</guid>
+      <description>In the beginning most startups are like fatally ill patients. They are companies without a business.
+When people are fatally ill in a deadly decease with no cure they tend to willing to try any potential cure, no matter how untested, experimental or even dangerous and life threating it might be. After all they are anyhow dying so they have nothing to loose and can therefore take immense risks.
+A startup which has not yet achived product market fit on a market big enough to long term sustain the company is dying.</description>
+    </item>
+    
+  </channel>
+</rss>

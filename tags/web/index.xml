@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Simon says</title>
+    <link>//simonmika.com/tags/web/</link>
+    <description>Recent content in Web on Simon says</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Aug 2016 23:18:43 +0200</lastBuildDate>
+    
+	<atom:link href="//simonmika.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS is Still Broken</title>
+      <link>//simonmika.com/article/css-broken/</link>
+      <pubDate>Thu, 18 Aug 2016 23:18:43 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/css-broken/</guid>
+      <description>The purpose of CSS is to describe the presentation of a document. It is created to enable separation of presentation and content. So far CSS has been improving the situation. We have been able to move more and more presentation out of our documents and into CSS.
+But even today, almost 20 years after CSS was initially released, I still can&amp;rsquo;t just put all my content in an HTML-document and never have to rearrange it when i create the presentation.</description>
+    </item>
+    
+  </channel>
+</rss>

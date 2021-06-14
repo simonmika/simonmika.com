@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>//simonmika.com/talk/recruiting/</loc>
+    <lastmod>2018-05-24T19:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/talk/how-i-use-typescript/</loc>
+    <lastmod>2018-03-22T19:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/talk/on-programming/</loc>
+    <lastmod>2017-09-26T19:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/article/taking-risk-when-dying/</loc>
+    <lastmod>2017-08-23T09:15:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/article/programming-interview/</loc>
+    <lastmod>2016-10-05T17:32:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/article/abstractions/</loc>
+    <lastmod>2016-09-29T08:15:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/article/recruiting-process/</loc>
+    <lastmod>2016-09-27T23:18:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/article/rock-star-programmers/</loc>
+    <lastmod>2016-09-27T23:18:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/article/css-broken/</loc>
+    <lastmod>2016-08-18T23:18:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/article/</loc>
+    <lastmod>2017-08-23T09:15:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/tags/recruiting/</loc>
+    <lastmod>2016-10-05T17:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/</loc>
+    <lastmod>2018-05-24T19:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/tags/software-architecture/</loc>
+    <lastmod>2016-09-29T08:15:46+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/tags/startup/</loc>
+    <lastmod>2017-08-23T09:15:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/tags/</loc>
+    <lastmod>2016-10-05T17:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/talk/</loc>
+    <lastmod>2018-05-24T19:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/tags/team/</loc>
+    <lastmod>2016-09-27T23:18:43+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/message-received/</loc>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/subscription-received/</loc>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/tags/uppsala.js/</loc>
+    <lastmod>2018-05-24T19:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/tags/web/</loc>
+    <lastmod>2016-08-18T23:18:43+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/description/</loc>
+  </url>
+  
+  <url>
+    <loc>//simonmika.com/subscribe/</loc>
+  </url>
+  
+</urlset>

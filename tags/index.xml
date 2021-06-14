@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Simon says</title>
+    <link>//simonmika.com/tags/</link>
+    <description>Recent content in Tags on Simon says</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Oct 2016 17:32:00 +0200</lastBuildDate>
+    
+	<atom:link href="//simonmika.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recruiting</title>
+      <link>//simonmika.com/tags/recruiting/</link>
+      <pubDate>Wed, 05 Oct 2016 17:32:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/tags/recruiting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Architecture</title>
+      <link>//simonmika.com/tags/software-architecture/</link>
+      <pubDate>Thu, 29 Sep 2016 08:15:46 +0200</pubDate>
+      
+      <guid>//simonmika.com/tags/software-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Startup</title>
+      <link>//simonmika.com/tags/startup/</link>
+      <pubDate>Wed, 23 Aug 2017 09:15:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/tags/startup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Team</title>
+      <link>//simonmika.com/tags/team/</link>
+      <pubDate>Tue, 27 Sep 2016 23:18:43 +0200</pubDate>
+      
+      <guid>//simonmika.com/tags/team/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uppsala.js</title>
+      <link>//simonmika.com/tags/uppsala.js/</link>
+      <pubDate>Thu, 24 May 2018 19:00:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/tags/uppsala.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>//simonmika.com/tags/web/</link>
+      <pubDate>Thu, 18 Aug 2016 23:18:43 +0200</pubDate>
+      
+      <guid>//simonmika.com/tags/web/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

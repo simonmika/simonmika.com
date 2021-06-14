@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Architecture on Simon says</title>
+    <link>//simonmika.com/tags/software-architecture/</link>
+    <description>Recent content in Software Architecture on Simon says</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Sep 2016 08:15:46 +0200</lastBuildDate>
+    
+	<atom:link href="//simonmika.com/tags/software-architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Abstractions</title>
+      <link>//simonmika.com/article/abstractions/</link>
+      <pubDate>Thu, 29 Sep 2016 08:15:46 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/abstractions/</guid>
+      <description>We humans can in our head only concurrently work with about eight items. If we try to work with significantly more we will lose some items. It is the human equivalent of a stack overflow. Our stack has a maximum depth of about eight. In order to handle more we need to bundle items together into a new item. It is the equivalent of grouping them together in a data structure and putting them into the heap and just store the pointer to it all on the stack.</description>
+    </item>
+    
+  </channel>
+</rss>

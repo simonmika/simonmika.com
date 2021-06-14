@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simon says</title>
+    <link>//simonmika.com/</link>
+    <description>Recent content on Simon says</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 May 2018 19:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="//simonmika.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recruiting and Become Recruited</title>
+      <link>//simonmika.com/talk/recruiting/</link>
+      <pubDate>Thu, 24 May 2018 19:00:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/talk/recruiting/</guid>
+      <description>A step by step guide on how to recruit programmers including checklists and what to do and not to do. It also covers some insight what you can do to improve the likelihood of becoming recruited.
+Slides Navigate using the orange arrows.
+ Open in a new tab.</description>
+    </item>
+    
+    <item>
+      <title>How I Use TypeScript</title>
+      <link>//simonmika.com/talk/how-i-use-typescript/</link>
+      <pubDate>Thu, 22 Mar 2018 19:00:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/talk/how-i-use-typescript/</guid>
+      <description>This talk gives an overview of the benefits of using TypeScript and how to achieve them. It covers the following subjects:
+ Tooling Benefits Configuration Type System Object Orientation  Slides Navigate using the orange arrows.
+ Open in a new tab.</description>
+    </item>
+    
+    <item>
+      <title>On Programming</title>
+      <link>//simonmika.com/talk/on-programming/</link>
+      <pubDate>Tue, 26 Sep 2017 19:00:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/talk/on-programming/</guid>
+      <description>This talk looks into all the different aspects of programming language and programmer habits. The headlines are:
+ Productivity vs Efficiency The Blub Paradox Superstitious Programmers Encapsulating &amp;amp; Abstracting Lowest Common Denominator Design Patterns Instead of a Better Language  Slides Navigate using the orange arrows.
+ Open in a new tab.</description>
+    </item>
+    
+    <item>
+      <title>Taking Risk When Dying</title>
+      <link>//simonmika.com/article/taking-risk-when-dying/</link>
+      <pubDate>Wed, 23 Aug 2017 09:15:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/taking-risk-when-dying/</guid>
+      <description>In the beginning most startups are like fatally ill patients. They are companies without a business.
+When people are fatally ill in a deadly decease with no cure they tend to willing to try any potential cure, no matter how untested, experimental or even dangerous and life threating it might be. After all they are anyhow dying so they have nothing to loose and can therefore take immense risks.
+A startup which has not yet achived product market fit on a market big enough to long term sustain the company is dying.</description>
+    </item>
+    
+    <item>
+      <title>The Programming Interview</title>
+      <link>//simonmika.com/article/programming-interview/</link>
+      <pubDate>Wed, 05 Oct 2016 17:32:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/programming-interview/</guid>
+      <description>When recruiting an artist like a designer or architect, you ask to see their portfolio. When you recruit a scientist you take a look at the papers they authored. Why? Because they are all professions where the individuals brilliance matters a lot for the results they produce. That is also the case with programmers.
+So why do we not spend more time looking at a candidates past programming achievements? The answer is probably due to a combination of factors:</description>
+    </item>
+    
+    <item>
+      <title>Abstractions</title>
+      <link>//simonmika.com/article/abstractions/</link>
+      <pubDate>Thu, 29 Sep 2016 08:15:46 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/abstractions/</guid>
+      <description>We humans can in our head only concurrently work with about eight items. If we try to work with significantly more we will lose some items. It is the human equivalent of a stack overflow. Our stack has a maximum depth of about eight. In order to handle more we need to bundle items together into a new item. It is the equivalent of grouping them together in a data structure and putting them into the heap and just store the pointer to it all on the stack.</description>
+    </item>
+    
+    <item>
+      <title>Recruiting Process</title>
+      <link>//simonmika.com/article/recruiting-process/</link>
+      <pubDate>Tue, 27 Sep 2016 23:18:43 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/recruiting-process/</guid>
+      <description>Good programmers are more like artists then sweatshop workers. If we are serious about recruiting good programmers we should not treat them like sweatshop workers.
+An employment is somewhat like a marriage. The relationship starts by finding a partner on a dating/job listing site or thru the referral of a trusted friend. After that you start dating/interviewing. After a period of dating/interviewing you end up writing a marriage/employment contract.
+One of the keys to a successful dating/interviewing is for it to be reciprocal.</description>
+    </item>
+    
+    <item>
+      <title>Rock Star Programmers</title>
+      <link>//simonmika.com/article/rock-star-programmers/</link>
+      <pubDate>Tue, 27 Sep 2016 23:18:43 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/rock-star-programmers/</guid>
+      <description>Sometimes I come across programmers that view themselves as rock stars. Some even label themselves code ninjas. As if they are some kind of programming super hero with special powers.
+While a do realize where this comes from. A good programmer can easily be more then ten times as productive as an average one. We do also need good raw models and front figures for our profession.
+ Programming is not a one man show.</description>
+    </item>
+    
+    <item>
+      <title>CSS is Still Broken</title>
+      <link>//simonmika.com/article/css-broken/</link>
+      <pubDate>Thu, 18 Aug 2016 23:18:43 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/css-broken/</guid>
+      <description>The purpose of CSS is to describe the presentation of a document. It is created to enable separation of presentation and content. So far CSS has been improving the situation. We have been able to move more and more presentation out of our documents and into CSS.
+But even today, almost 20 years after CSS was initially released, I still can&amp;rsquo;t just put all my content in an HTML-document and never have to rearrange it when i create the presentation.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>//simonmika.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//simonmika.com/about/</guid>
+      <description>I am Simon Mika, and I create things. Professionally I create software products. Either hands on or by creating the organization that builds the products.
+I live in Uppsala, Sweden with my wife Sannah and my four kids in a house from 1937 that we have been renovating since 2009.
+I write about building software and building companies.
+Currently, I help companies as a consultant with everything from software architecture to business development.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>//simonmika.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//simonmika.com/contact/</guid>
+      <description>Don&amp;rsquo;t hesitate to contact me with ideas, suggestions and opinions. I look forward to hear from you.
+Name Email Message  Send  </description>
+    </item>
+    
+    <item>
+      <title>Thank you</title>
+      <link>//simonmika.com/message-received/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//simonmika.com/message-received/</guid>
+      <description>Thank you for reaching out. We will get back to you as soon as we can.</description>
+    </item>
+    
+    <item>
+      <title>Thank you</title>
+      <link>//simonmika.com/subscription-received/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//simonmika.com/subscription-received/</guid>
+      <description>Thank you for subscribing. You will get an email notification as soon as we publish new articles.</description>
+    </item>
+    
+    <item>
+      <title>_description_</title>
+      <link>//simonmika.com/description/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//simonmika.com/description/</guid>
+      <description>Simon says contains opinionated articles on subjects such as software development, software startups and engineering recruitment.
+The articles convey lessons learned during work as software engineer, engineering manager and a consultant.</description>
+    </item>
+    
+    <item>
+      <title>_subscribe_</title>
+      <link>//simonmika.com/subscribe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//simonmika.com/subscribe/</guid>
+      <description> </description>
+    </item>
+    
+  </channel>
+</rss>

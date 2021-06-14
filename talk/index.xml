@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Simon says</title>
+    <link>//simonmika.com/talk/</link>
+    <description>Recent content in Talks on Simon says</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 May 2018 19:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="//simonmika.com/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recruiting and Become Recruited</title>
+      <link>//simonmika.com/talk/recruiting/</link>
+      <pubDate>Thu, 24 May 2018 19:00:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/talk/recruiting/</guid>
+      <description>A step by step guide on how to recruit programmers including checklists and what to do and not to do. It also covers some insight what you can do to improve the likelihood of becoming recruited.
+Slides Navigate using the orange arrows.
+ Open in a new tab.</description>
+    </item>
+    
+    <item>
+      <title>How I Use TypeScript</title>
+      <link>//simonmika.com/talk/how-i-use-typescript/</link>
+      <pubDate>Thu, 22 Mar 2018 19:00:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/talk/how-i-use-typescript/</guid>
+      <description>This talk gives an overview of the benefits of using TypeScript and how to achieve them. It covers the following subjects:
+ Tooling Benefits Configuration Type System Object Orientation  Slides Navigate using the orange arrows.
+ Open in a new tab.</description>
+    </item>
+    
+    <item>
+      <title>On Programming</title>
+      <link>//simonmika.com/talk/on-programming/</link>
+      <pubDate>Tue, 26 Sep 2017 19:00:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/talk/on-programming/</guid>
+      <description>This talk looks into all the different aspects of programming language and programmer habits. The headlines are:
+ Productivity vs Efficiency The Blub Paradox Superstitious Programmers Encapsulating &amp;amp; Abstracting Lowest Common Denominator Design Patterns Instead of a Better Language  Slides Navigate using the orange arrows.
+ Open in a new tab.</description>
+    </item>
+    
+  </channel>
+</rss>

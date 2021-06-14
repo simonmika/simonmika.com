@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recruiting on Simon says</title>
+    <link>//simonmika.com/tags/recruiting/</link>
+    <description>Recent content in Recruiting on Simon says</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Oct 2016 17:32:00 +0200</lastBuildDate>
+    
+	<atom:link href="//simonmika.com/tags/recruiting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Programming Interview</title>
+      <link>//simonmika.com/article/programming-interview/</link>
+      <pubDate>Wed, 05 Oct 2016 17:32:00 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/programming-interview/</guid>
+      <description>When recruiting an artist like a designer or architect, you ask to see their portfolio. When you recruit a scientist you take a look at the papers they authored. Why? Because they are all professions where the individuals brilliance matters a lot for the results they produce. That is also the case with programmers.
+So why do we not spend more time looking at a candidates past programming achievements? The answer is probably due to a combination of factors:</description>
+    </item>
+    
+    <item>
+      <title>Recruiting Process</title>
+      <link>//simonmika.com/article/recruiting-process/</link>
+      <pubDate>Tue, 27 Sep 2016 23:18:43 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/recruiting-process/</guid>
+      <description>Good programmers are more like artists then sweatshop workers. If we are serious about recruiting good programmers we should not treat them like sweatshop workers.
+An employment is somewhat like a marriage. The relationship starts by finding a partner on a dating/job listing site or thru the referral of a trusted friend. After that you start dating/interviewing. After a period of dating/interviewing you end up writing a marriage/employment contract.
+One of the keys to a successful dating/interviewing is for it to be reciprocal.</description>
+    </item>
+    
+    <item>
+      <title>Rock Star Programmers</title>
+      <link>//simonmika.com/article/rock-star-programmers/</link>
+      <pubDate>Tue, 27 Sep 2016 23:18:43 +0200</pubDate>
+      
+      <guid>//simonmika.com/article/rock-star-programmers/</guid>
+      <description>Sometimes I come across programmers that view themselves as rock stars. Some even label themselves code ninjas. As if they are some kind of programming super hero with special powers.
+While a do realize where this comes from. A good programmer can easily be more then ten times as productive as an average one. We do also need good raw models and front figures for our profession.
+ Programming is not a one man show.</description>
+    </item>
+    
+  </channel>
+</rss>
