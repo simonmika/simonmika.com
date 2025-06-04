@@ -1,31 +1,33 @@
-baseurl: //simonmika.com/
-languageCode: en-us
+baseURL: "https://simonmika.com/"
+languageCode: "en-us"
 title: "Simon says"
-theme: hugo-theme-html5
-MetaDataFormat: yaml
+theme: "hugo-theme-html5"
+metaDataFormat: "yaml"
+paginate: 100
+disqusShortname: "simonmika"
+googleAnalytics: "UA-83177710-2"
+
 params:
-  Description: "truths, opinions and preconceptions"
-  Logotype: "img/logotype.svg"
-  CSS:
+  description: "truths, opinions and preconceptions"
+  logotype: "img/logotype.svg"
+  css:
     - "css/text.css"
     - "css/color.css"
     - "css/layout.css"
     - "css/form.css"
     - "css/blockquotes.css"
-  ListMode: "header"
-  FrontPageMode: "header"
-  FrontPageSection: "article"
-  NavigationInHeader: true
-  Prefix:
+  listMode: "header"
+  frontPageMode: "header"
+  frontPageSection: "article"
+  navigationInHeader: true
+  prefix:
     - "og: http://opy.me/ns#"
-googleAnalytics: "UA-83177710-2"
-paginate: 100
+
 menu:
   main:
     - name: "Articles"
       weight: 10
-      URL: "/"
+      url: "/"
     - name: "Talks"
       weight: 20
-      URL: "/talk"
-disqusShortname: "simonmika"
+      url: "/talk"

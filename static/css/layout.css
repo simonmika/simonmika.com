@@ -129,6 +129,9 @@ body > footer > nav > ul {
 body > footer > nav > ul > li {
 	display: table-cell;
 }
+body > article.mode-header > header > a[href="../"] {
+	outline: 1px solid green;
+}
 
 /* Wide */
 @media screen and (min-width: 640px) {
