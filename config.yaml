@@ -2,11 +2,38 @@ baseURL: "https://simonmika.com/"
 languageCode: "en-us"
 title: "Simon says"
 theme: "hugo-theme-html5"
-metaDataFormat: "yaml"
-paginate: 100
-disqusShortname: "simonmika"
-googleAnalytics: "UA-83177710-2"
 
+# Modern Hugo Features
+enableGitInfo: true
+enableRobotsTXT: true
+enableEmoji: true
+
+# Content Management
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# Markdown Processor Configuration
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
+
+# Pagination
+pagination:
+  path: "page"
+  pagerSize: 100
+
+# Output Formats & URLs
+permalinks:
+  posts: /:year/:month/:title/
+
+# Site Parameters
 params:
   description: "truths, opinions and preconceptions"
   logotype: "img/logotype.svg"
@@ -23,6 +50,7 @@ params:
   prefix:
     - "og: http://opy.me/ns#"
 
+# Menu Configuration
 menu:
   main:
     - name: "Articles"
