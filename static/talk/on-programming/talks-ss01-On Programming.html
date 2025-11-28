@@ -213,7 +213,7 @@ int main()
 					<section>
 							<pre><code data-trim data-noescape>
 								function maximum(a, b) {
-									if (a < b) 
+									if (a < b)
 										return a;
 									else
 										return b;
@@ -255,20 +255,20 @@ public class Car: IEquatable&lt;Car&gt; {
 		this.Seats = seats;
 	}
 	public override int GetHash() {
-		return (this.Brand?.GetHash() ?? 0) * 31 + 
+		return (this.Brand?.GetHash() ?? 0) * 31 +
 			this.Seats.GetHash())
 	}
 	public override bool Equals(object other) {
 		return this.Equals(other as Car)
 	}
 	public bool Equals(Car other) {
-		return object.ReferenceEquals(other, null) &amp;&amp; 
-			this.Brand == other.Brand &amp;&amp; 
+		return object.ReferenceEquals(other, null) &amp;&amp;
+			this.Brand == other.Brand &amp;&amp;
 			this.Seats == other.Seats;
 	}
 	public static operator bool ==(Car left, Car right) {
-		return object.ReferenceEquals(left, right) || 
-			!object.ReferenceEquals(left, null) &amp;&amp; 
+		return object.ReferenceEquals(left, right) ||
+			!object.ReferenceEquals(left, null) &amp;&amp;
 			left.Equals(right);
 	}
 	public static operator bool !=(Car left, Car right) {
@@ -287,7 +287,7 @@ public class Singleton
 
 		public static Singleton Instance
 		{
-			get 
+			get
 			{
 					if (instance == null)
 					{
@@ -302,7 +302,7 @@ public class Singleton
 					<section>
 							<pre><code data-trim data-noescape style="max-height: none">
 	using System;
-	
+
 	public class Singleton
 	{
 			Singleton() {}
@@ -344,8 +344,8 @@ public class Singleton
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: false,
-				progress: false,
+				controls: true,
+				progress: true,
 				history: true,
 				center: true,
 
