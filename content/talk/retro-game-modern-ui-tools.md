@@ -4,7 +4,7 @@ tags: ["Uppsala Tech"]
 title: Retro Game w/ Modern UI Tools
 resources :
 - src : "./talks-ss11 Retro Game.html"
-	name : "slides"
+  name : "slides"
 ---
 A way to create a simple old school game using modern user interface tools. Perfect for side projects. Get the <a href="https://github.com/simonmika/adventures-of-aron">code</a>.
 

@@ -4,7 +4,7 @@ tags: ["Uppsala Tech"]
 title: Egenanställd Konsult
 resources :
 - src : "./talks-ss10 Egen konsult.html"
-	name : "slides"
+  name : "slides"
 ---
 Att vara självanställd konsult.
 
