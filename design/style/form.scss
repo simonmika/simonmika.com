@@ -1,0 +1,61 @@
+@use './variables' as *;
+// Form-specific variables
+$color-border-default: #999;
+$color-border-focus: #000;
+$padding-small: 0.25em;
+$padding-medium: 0.6em;
+$padding-large: 2em;
+$submit-width: 6em;
+form {
+	// Just to center the form on the page
+	margin: 0 auto;
+	// To see the outline of the form
+	padding: 0;
+}
+label {
+	display: block;
+	margin-bottom: 0.2em;
+}
+input,
+textarea {
+	display: block;
+	box-sizing: border-box;
+	// To harmonize the look & feel of text field border
+	border: 1px solid $color-border-default;
+	border-radius: $border-radius;
+	padding: $padding-small;
+	background-color: rgba(255, 255, 255, 0.6);
+	margin-bottom: $padding-medium;
+	&:focus {
+		// To give a little highlight on active elements
+		border-color: $color-border-focus;
+	}
+}
+main > article > main {
+	input,
+	textarea {
+		width: calc(100% - 2em);
+	}
+}
+nav form {
+	float: right;
+	padding: $padding-large;
+	> input {
+		float: left;
+		margin-bottom: 0;
+		border-color: $color-primary;
+		&[type="email"] {
+			border-right: none;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			width: calc(100% - #{$submit-width});
+		}
+		&[type="submit"] {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			width: $submit-width;
+			color: $color-light;
+			background-color: $color-primary;
+		}
+	}
+}

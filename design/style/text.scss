@@ -1,0 +1,70 @@
+@use './variables' as *;
+// Additional text-specific variables
+$line-height-base: 140%;
+$font-size-small: 85%;
+$font-size-medium: 1em;
+$font-size-large: 1.2em;
+$font-size-xl: 1.4em;
+// Base typography
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-light;
+  line-height: $line-height-base;
+}
+a {
+  text-decoration: none;
+}
+em {
+  font-style: normal;
+  font-weight: $font-weight-medium;
+}
+// Body structure
+body {
+  > main {
+    > header > p,
+    > article > header > p {
+      font-size: $font-size-small;
+    }
+    > article > main {
+      blockquote {
+        font-size: $font-size-xl;
+        p {
+          margin: 0.2em 0;
+        }
+      }
+    }
+    > footer > nav {
+      font-size: $font-size-large;
+      text-align: center;
+    }
+  }
+  > header > nav,
+  > footer > nav {
+    text-transform: lowercase;
+    text-align: center;
+    @media screen and (min-width: $breakpoint-tablet) {
+      text-align: right;
+    }
+  }
+  > footer {
+    > nav li > a,
+    > main > article > header > h1 {
+      font-size: $font-size-medium;
+    }
+    > main > article {
+      > main h1 {
+        font-size: 0.6em;
+      }
+      > header > p {
+        font-size: 0.75em;
+      }
+    }
+  }
+}

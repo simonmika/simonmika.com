@@ -1,9 +1,9 @@
 {
-	"name": "@binotype/sample",
-	"version": "0.0.1",
-	"license": "MIT",
-	"private": false,
-	"description": "Sample Binotype site.",
+	"name": "@simonmika/website",
+	"version": "1.2.0",
+	"license": "UNLICENSED",
+	"private": true,
+	"description": "Website for Simon Mika, built with Binotype Site",
 	"type": "module",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.js",
@@ -44,12 +44,12 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/binotype/sample.git"
+		"url": "git+https://github.com/simonmika/website.git"
 	},
 	"bugs": {
-		"url": "https://github.com/binotype/sample/issues"
+		"url": "https://github.com/simonmika/website/issues"
 	},
-	"homepage": "https://github.com/binotype/sample/",
+	"homepage": "https://github.com/simonmika/website/",
 	"scripts": {
 		"build": "stencil build --prerender",
 		"start": "stencil build --dev --watch --serve --prerender",
@@ -89,6 +89,7 @@
 		"@binotype/model": "^0.2.0",
 		"isly": "^1.8.0",
 		"isoly": "^3.1.8",
+		"showdown": "^2.1.0",
 		"tidily": "^0.2.7"
 	},
 	"peerDependencies": {

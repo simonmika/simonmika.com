@@ -1,0 +1,111 @@
+@use './variables' as *;
+// Black on White
+body {
+	color: $color-dark;
+	background: $color-light;
+	> header {
+		> h1 > a {
+			&,
+			&:visited,
+			&:hover {
+				color: inherit;
+				background: inherit;
+			}
+		}
+		> nav {
+			a,
+			a:visited {
+				color: $color-primary;
+			}
+			li > a:hover {
+				// White on Black
+				color: $color-light;
+				background: $color-dark;
+			}
+		}
+	}
+	> main {
+		> footer > nav > ul > li {
+			> a {
+				&,
+				&:visited {
+					color: $color-primary;
+				}
+				&:hover {
+					color: inherit;
+					background: inherit;
+				}
+			}
+			&.disabled > a {
+				&,
+				&:visited {
+					color: inherit;
+					background: inherit;
+				}
+			}
+			&.active > a {
+				&,
+				&:visited {
+					color: inherit;
+					background: inherit;
+				}
+			}
+		}
+		> article {
+			&:first-child > header {
+				// White on Red
+				color: $color-light;
+				background: $color-primary;
+			}
+			> main a {
+				&,
+				&:visited,
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+		> *:first-child > header > a {
+			&,
+			&:visited {
+				color: inherit;
+				background: inherit;
+			}
+		}
+		&.list > article:hover > header {
+			// White on Red and White on Black
+			color: $color-light;
+			background: $color-primary;
+		}
+		@media screen and (min-width: $breakpoint-tablet) {
+			&,
+			~ footer > main {
+				border-left: solid 1px $color-grey;
+			}
+		}
+	}
+	// Grey on Black
+	> footer {
+		color: $color-grey;
+		background: $color-dark;
+		a {
+			&,
+			&:visited {
+				color: inherit;
+				background: inherit;
+			}
+			&:hover {
+				color: $color-light;
+			}
+		}
+		> main > article:hover {
+			color: $color-light;
+		}
+		> nav {
+			border-bottom: solid 1px $color-grey;
+			@media screen and (min-width: $breakpoint-tablet) {
+				border-bottom: none;
+			}
+		}
+	}
+}

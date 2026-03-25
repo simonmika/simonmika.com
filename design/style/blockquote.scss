@@ -1,0 +1,87 @@
+@use './variables' as *;
+// Font face
+@font-face {
+	font-family: $font-family-sosa;
+	src: url(../assets/sosa-regular-webfont.woff);
+}
+// Share button styling
+.share {
+	&:link,
+	&:visited,
+	&:active {
+		color: $color-grey;
+		background: $color-dark;
+	}
+	&:hover:after {
+		background: $color-light;
+		color: $color-primary;
+	}
+	&:after {
+		font-family: $font-family-sosa;
+		font-size: 0.8em;
+		color: $color-grey;
+		background: $color-dark;
+		width: $share-size;
+		height: $share-size;
+		border-radius: $share-radius;
+		text-align: center;
+		display: block;
+		clear: right;
+		float: right;
+		padding: $share-padding;
+	}
+	&::first-child:after {
+		padding-top: $share-padding;
+	}
+	&::last-child:after {
+		padding-bottom: $share-padding;
+	}
+	// Social platform icons
+	&.twitter:after {
+		content: "t";
+	}
+	&.linkedin:after {
+		content: "ą";
+	}
+	&.facebook:after {
+		content: "v";
+	}
+	&.googleplus:after {
+		content: "Ć ";
+	}
+	&.email:after {
+		content: "É";
+	}
+}
+// Blockquote styling
+body > main > article > main blockquote {
+	color: $color-grey;
+	background: $color-dark;
+	margin-left: -1em;
+	margin-right: -1em;
+	padding: 0.4em 1em;
+	overflow-y: hidden;
+	> *:not(.share) {
+		&:before {
+			content: "\"";
+		}
+		&:after {
+			content: "\"";
+		}
+	}
+	// Responsive breakpoints
+	@media screen and (min-width: $breakpoint-small) {
+		margin-left: calc(-10vw * 0.63);
+		padding-left: calc(10vw * 0.63);
+	}
+	@media screen and (min-width: $breakpoint-medium) {
+		float: right;
+		max-width: 12em;
+		margin: 0.25em -1em 0.25em 0.25em;
+		padding-left: 1em;
+	}
+	@media screen and (min-width: $breakpoint-large) {
+		margin-right: calc((#{$breakpoint-large} - 100vw) * 0.63 - 1em);
+		max-width: calc(12em + (100vw - #{$breakpoint-large}) * 0.63 * 0.5);
+	}
+}

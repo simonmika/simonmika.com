@@ -1,0 +1,277 @@
+@use './variables' as *;
+// Layout-specific variables
+$padding-large: 10%;
+$padding-small: 2em;
+$margin-small: 0.2em;
+$table-width: 10em;
+$sidebar-width: 37%;
+$main-width: 62.5%;
+$main-max-width: 40em;
+$header-image-max-width: 80%;
+// Mixins
+@mixin table-layout {
+  display: table;
+  width: 100%;
+}
+@mixin table-row {
+  display: table-row;
+  width: 100%;
+}
+@mixin table-cell {
+  display: table-cell;
+}
+@mixin full-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@mixin content-padding {
+  padding-top: $padding-unit;
+  padding-bottom: $padding-unit;
+  padding-left: $padding-unit;
+  padding-right: $padding-unit;
+}
+// Main Layout
+body {
+  > header {
+    > h1 {
+      padding-top: $padding-large;
+      margin-bottom: 0;
+      > a > img {
+        max-width: $header-image-max-width;
+      }
+    }
+    > p {
+      margin-top: 0;
+      padding-bottom: $padding-large;
+      margin-left: $padding-small;
+    }
+    > nav {
+      display: none;
+      > ul ul {
+        display: none;
+      }
+      li {
+        margin: $padding-unit 0;
+        > a {
+          padding-top: $padding-unit;
+          padding-bottom: $padding-unit;
+          padding-left: $padding-unit;
+          padding-right: $padding-unit;
+        }
+      }
+    }
+  }
+  > main {
+    > * > * {
+      @include content-padding;
+    }
+    > footer > nav {
+      @include table-layout;
+      max-width: $table-width;
+      margin: 0 auto;
+      > ul {
+        @include table-row;
+        li {
+          @include table-cell;
+          > a {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+    > article {
+      position: relative;
+      > nav {
+        display: none;
+      }
+      > .self-link {
+        padding: 0;
+        > a > span {
+          @include full-overlay;
+          background-image: url('/assets/transparent.gif');
+        }
+      }
+      > header {
+        position: relative;
+        > p {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding-right: $padding-small;
+          > * {
+            display: block;
+            margin-left: auto;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  > footer {
+    clear: both;
+    width: auto;
+    overflow: auto;
+    > nav {
+      @include table-layout;
+      padding-top: $padding-unit;
+      padding-bottom: $padding-unit;
+      ul {
+        margin: 0;
+        li {
+          margin: $padding-unit 0;
+          > a {
+            padding-left: $padding-unit;
+            padding-right: $padding-unit;
+          }
+        }
+      }
+      > ul {
+        @include table-row;
+        > li {
+          @include table-cell;
+        }
+      }
+    }
+    > main {
+      padding-top: $padding-unit;
+      padding-bottom: $padding-unit;
+      > * > * {
+        padding-left: $padding-unit;
+        padding-right: $padding-unit;
+      }
+      > article {
+        position: relative;
+        > .self-link {
+          padding: 0;
+          > a > span {
+            @include full-overlay;
+            background-image: url('transparent.gif');
+          }
+        }
+        > header {
+          position: relative;
+          > h1,
+          > p {
+            margin: $margin-small 0;
+          }
+          > p {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-right: $padding-small;
+            > * {
+              display: block;
+              margin-left: auto;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    > footer {
+      clear: both;
+    }
+  }
+  // Binotype specific styles
+  > binotype-site {
+    > header > nav li > a,
+    > footer > nav li > a {
+      text-transform: lowercase;
+    }
+  }
+}
+// Utility classes
+span.article-word-count {
+  display: none;
+  &::after {
+    content: " words";
+  }
+}
+.article-reading-time,
+.article-length {
+  display: none;
+}
+article > header > a[href="../"] {
+  display: none;
+}
+// Responsive Design
+/* Narrow screens (default) */
+body > header,
+body > main,
+body > footer > nav,
+body > footer > main,
+body > footer > footer {
+  width: 100%;
+}
+body > header,
+body > main > header,
+body > footer > footer {
+  text-align: center;
+}
+/* Wide screens */
+@media screen and (min-width: $breakpoint-wide) {
+  body {
+    > header,
+    > main {
+      min-height: 0.5hv;
+    }
+    > header {
+      width: $sidebar-width;
+      float: left;
+      text-align: right;
+      > nav {
+        display: block;
+      }
+      > *:not(nav) {
+        padding-right: $padding-large;
+      }
+      > nav li > a {
+        padding-right: $padding-large;
+      }
+    }
+    > main {
+      float: left;
+      width: $main-width;
+      max-width: $main-max-width;
+      > header {
+        text-align: left;
+      }
+      > * > * {
+        padding-left: $padding-large;
+      }
+    }
+    > footer {
+      > nav {
+        display: unset;
+        width: $sidebar-width;
+        float: left;
+        text-align: right;
+        > ul {
+          display: block;
+          > li {
+            display: block;
+          }
+        }
+        li > a {
+          padding-right: $padding-large;
+        }
+      }
+      > main {
+        float: left;
+        width: $main-width;
+        max-width: $main-max-width;
+        > header {
+          text-align: left;
+        }
+        > * > * {
+          padding-left: $padding-large;
+        }
+      }
+    }
+  }
+}

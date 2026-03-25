@@ -15,6 +15,8 @@ export namespace Components {
         "debug": boolean | "site" | "context";
         "site"?: binotype.Site | string;
     }
+    interface SimonmikaSite {
+    }
 }
 declare global {
     interface HTMLBinotypeSiteElement extends Components.BinotypeSite, HTMLStencilElement {
@@ -23,8 +25,15 @@ declare global {
         prototype: HTMLBinotypeSiteElement;
         new (): HTMLBinotypeSiteElement;
     };
+    interface HTMLSimonmikaSiteElement extends Components.SimonmikaSite, HTMLStencilElement {
+    }
+    var HTMLSimonmikaSiteElement: {
+        prototype: HTMLSimonmikaSiteElement;
+        new (): HTMLSimonmikaSiteElement;
+    };
     interface HTMLElementTagNameMap {
         "binotype-site": HTMLBinotypeSiteElement;
+        "simonmika-site": HTMLSimonmikaSiteElement;
     }
 }
 declare namespace LocalJSX {
@@ -35,6 +44,8 @@ declare namespace LocalJSX {
         "debug"?: boolean | "site" | "context";
         "site"?: binotype.Site | string;
     }
+    interface SimonmikaSite {
+    }
 
     interface BinotypeSiteAttributes {
         "site": binotype.Site | string;
@@ -43,6 +54,7 @@ declare namespace LocalJSX {
 
     interface IntrinsicElements {
         "binotype-site": Omit<BinotypeSite, keyof BinotypeSiteAttributes> & { [K in keyof BinotypeSite & keyof BinotypeSiteAttributes]?: BinotypeSite[K] } & { [K in keyof BinotypeSite & keyof BinotypeSiteAttributes as `attr:${K}`]?: BinotypeSiteAttributes[K] } & { [K in keyof BinotypeSite & keyof BinotypeSiteAttributes as `prop:${K}`]?: BinotypeSite[K] };
+        "simonmika-site": SimonmikaSite;
     }
 }
 export { LocalJSX as JSX };
@@ -50,6 +62,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "binotype-site": LocalJSX.IntrinsicElements["binotype-site"] & JSXBase.HTMLAttributes<HTMLBinotypeSiteElement>;
+            "simonmika-site": LocalJSX.IntrinsicElements["simonmika-site"] & JSXBase.HTMLAttributes<HTMLSimonmikaSiteElement>;
         }
     }
 }
