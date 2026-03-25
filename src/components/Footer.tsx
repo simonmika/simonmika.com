@@ -11,12 +11,6 @@ export const Footer: FunctionalComponent<binotype.Footer.Properties> = ({ contex
 				<binotype.Article {...context.load(context.design.home?.section ?? "", "list", 5)!}></binotype.Article>
 			)}
 		</main>
-		<p>
-			<code>
-				<pre>{JSON.stringify(context.menu, null, 2)}</pre>
-			</code>
-		</p>
 	</footer>
 )
-
 export namespace Footer {}
