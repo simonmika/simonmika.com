@@ -1,4 +1,4 @@
-import { binotype } from "@binotype/site"
+import { binotype } from "@binotype/model"
 import { about } from "./about"
 import { article } from "./article"
 import { contact } from "./contact"

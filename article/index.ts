@@ -1,4 +1,4 @@
-import { binotype} from "@binotype/site"
+import { binotype } from "@binotype/model"
 import { abstractions } from "./abstractions"
 import { cssBroken } from "./css-broken"
 import { naming } from "./naming"

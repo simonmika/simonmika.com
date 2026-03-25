@@ -15,7 +15,7 @@ $header-image-max-width: 80%;
 }
 @mixin table-row {
   display: table-row;
-  width: 100%;
+  width: calc(100% - 80px);
 }
 @mixin table-cell {
   display: table-cell;
@@ -150,7 +150,7 @@ body {
           padding: 0;
           > a > span {
             @include full-overlay;
-            background-image: url('transparent.gif');
+            background-image: url('/assets/transparent.gif');
           }
         }
         > header {

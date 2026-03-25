@@ -1,5 +1,5 @@
 import showdown from "showdown"
-import { binotype} from "@binotype/site"
+import { binotype } from "@binotype/model"
 
 export const about: binotype.Site.Page = {
 	title: "About",

@@ -1,4 +1,4 @@
-import { binotype } from "@binotype/site"
+import { binotype } from "@binotype/model"
 import showdown from "showdown"
 
 export const abstractions: binotype.Site.Page = {

@@ -50,6 +50,7 @@ export const config: Config = {
 			copy: [
 				{ src: "../design/icon/*", dest: "icon/" },
 				{ src: "../design/assets/*", dest: "assets/" },
+				{ src: "../talk/slides", dest: "talk/" },
 			],
 		},
 	],

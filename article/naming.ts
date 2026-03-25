@@ -1,5 +1,5 @@
 import showdown from "showdown"
-import { binotype} from "@binotype/site"
+import { binotype } from "@binotype/model"
 
 export const naming: binotype.Site.Page = {
 	published: "2016-10-27T16:12:00+02:00",

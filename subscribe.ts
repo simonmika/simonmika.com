@@ -1,4 +1,4 @@
-import { binotype} from "@binotype/site"
+import { binotype } from "@binotype/model"
 
 export const subscribe: binotype.Site.Page = {
 	title: "Subscribe",
