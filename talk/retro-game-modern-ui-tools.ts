@@ -1,11 +1,12 @@
 import showdown from "showdown"
 import { binotype } from "@binotype/model"
 
-export const retroGameModernUITools: binotype.Site.Page = {
+export const retroGameModernUiTools: binotype.Site.Page = {
 	published: "2025-11-28T10:00:00+02:00",
 	tags: ["Uppsala Tech"],
 	title: "Retro Game w/ Modern UI Tools",
-	content: new showdown.Converter().makeHtml(`A way to create a simple old school game using modern user interface tools. Perfect for side projects. Get the <a href="https://github.com/simonmika/adventures-of-aron">code</a>.
+	content: new showdown.Converter()
+		.makeHtml(`A way to create a simple old school game using modern user interface tools. Perfect for side projects. Get the <a href="https://github.com/simonmika/adventures-of-aron">code</a>.
 
 # Slides
 

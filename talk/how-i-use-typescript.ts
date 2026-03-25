@@ -1,7 +1,7 @@
 import showdown from "showdown"
 import { binotype } from "@binotype/model"
 
-export const howIUseTypeScript: binotype.Site.Page = {
+export const howIUseTypescript: binotype.Site.Page = {
 	published: "2018-03-22T19:00:00+02:00",
 	tags: ["Uppsala.JS"],
 	title: "How I Use TypeScript",
