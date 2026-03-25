@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'example',
+  namespace: 'sample',
   outputTargets: [
     {
       type: 'dist',
@@ -13,11 +13,14 @@ export const config: Config = {
       externalRuntime: false,
     },
     {
-      type: 'docs-readme',
-    },
-    {
       type: 'www',
       serviceWorker: null, // disable service workers
+  		baseUrl: "http://example.com/",
+			prerenderConfig: "./prerender.config.ts",
+			copy: [
+				{ src: "../design/icon/*", dest: "icon/" },
+				{ src: "../design/assets/*", dest: "assets/" },
+			],
     },
   ],
   testing: {
