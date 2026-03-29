@@ -54,7 +54,7 @@
 		"build": "stencil build --prerender",
 		"start": "stencil build --dev --watch --serve --prerender",
 		"preserve": "npm run build",
-		"serve": "http-server www",
+		"serve": "http-server www -c-1",
 		"test": "vitest --run",
 		"test.watch": "vitest --watch",
 		"generate": "stencil generate",
@@ -86,7 +86,7 @@
 		"vitest": "^4.1.1"
 	},
 	"dependencies": {
-		"@binotype/model": "^0.3.1",
+		"@binotype/model": "^0.15.0",
 		"isly": "^1.8.0",
 		"isoly": "^3.1.8",
 		"showdown": "^2.1.0",
