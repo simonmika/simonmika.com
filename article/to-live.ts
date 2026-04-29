@@ -45,5 +45,5 @@ The choice is yours: Will you be a passive observer of life, or an active partic
 
 Because tomorrow isn't guaranteed - but today's actions shape all our tomorrows.
 
-`),
+`)
 }

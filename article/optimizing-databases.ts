@@ -5,5 +5,5 @@ export const optimizingDatabases: binotype.Site.Page = {
 	draft: true,
 	tags: [""],
 	title: "Optimizing Databases",
-	content: new showdown.Converter().makeHtml(``),
+	content: new showdown.Converter().makeHtml(``)
 }

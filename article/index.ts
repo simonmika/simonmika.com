@@ -24,6 +24,6 @@ export const article: binotype.Site.Page = {
 		recruitingProcess,
 		rockStarProgrammers,
 		takingRiskWhenDying,
-		toLive,
-	},
+		toLive
+	}
 }

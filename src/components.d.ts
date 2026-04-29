@@ -6,14 +6,16 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { binotype } from "@binotype/model";
+import { VNode } from "@stencil/core";
 export { binotype } from "@binotype/model";
+export { VNode } from "@stencil/core";
 export namespace Components {
     interface BinotypeSite {
         /**
           * @default false
          */
         "debug": boolean | "site" | "context";
-        "site"?: binotype.Site | string;
+        "site"?: binotype.Site<VNode> | string;
     }
     interface SimonmikaSite {
     }
@@ -42,13 +44,13 @@ declare namespace LocalJSX {
           * @default false
          */
         "debug"?: boolean | "site" | "context";
-        "site"?: binotype.Site | string;
+        "site"?: binotype.Site<VNode> | string;
     }
     interface SimonmikaSite {
     }
 
     interface BinotypeSiteAttributes {
-        "site": binotype.Site | string;
+        "site": binotype.Site<VNode> | string;
         "debug": string;
     }
 

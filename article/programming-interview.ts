@@ -37,5 +37,5 @@ Instead of grading the end result, the interviewer should during the programming
 3. Are they able to see benefits of doing things in another way then they are used to?
 
 This style of programming interview will also help the candidate to get a feeling of how working with you at your company will be. It full fills the [criteria of reciprocity](../recruiting-process).
-`),
+`)
 }

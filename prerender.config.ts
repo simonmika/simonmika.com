@@ -13,9 +13,9 @@ export const config: PrerenderConfig = {
 			console: {
 				error: (msg: any) => console.error(`[${url}] Error:`, msg),
 				log: (msg: any) => console.log(`[${url}] Log:`, msg),
-				warn: (msg: any) => console.warn(`[${url}] Warning:`, msg),
+				warn: (msg: any) => console.warn(`[${url}] Warning:`, msg)
 			},
-			staticDocument: true,
+			staticDocument: true
 		}
 	},
 	afterHydrate(document, url) {
@@ -27,5 +27,5 @@ export const config: PrerenderConfig = {
 		}
 		console.log(`✅ Finished prerender for: ${url}`)
 		return document
-	},
+	}
 }

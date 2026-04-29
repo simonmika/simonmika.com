@@ -8,12 +8,5 @@ import { retroGameModernUiTools } from "./retro-game-modern-ui-tools"
 
 export const talk: binotype.Site.Page = {
 	title: "Talks",
-	pages: {
-		onProgramming,
-		howIUseTypescript,
-		egenKonsult,
-		recruiting,
-		recruiting2025,
-		retroGameModernUiTools,
-	},
+	pages: { onProgramming, howIUseTypescript, egenKonsult, recruiting, recruiting2025, retroGameModernUiTools }
 }

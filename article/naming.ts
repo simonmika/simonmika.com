@@ -5,8 +5,8 @@ export const naming: binotype.Site.Page = {
 	published: "2016-10-27T16:12:00+02:00",
 	tags: ["software architecture", "communication"],
 	title: "Naming",
-	content: new showdown.Converter()
-		.makeHtml(`The power of _naming_ extends far beyond programming. From ancient myths where knowing something's _true name_ gave power over it, to modern branding where companies spend millions on finding the _right name_, to parents carefully choosing names for their children – our ability to name things shapes how we think and communicate about them.
+	content:
+		new showdown.Converter().makeHtml(`The power of _naming_ extends far beyond programming. From ancient myths where knowing something's _true name_ gave power over it, to modern branding where companies spend millions on finding the _right name_, to parents carefully choosing names for their children – our ability to name things shapes how we think and communicate about them.
 
 In software development, this universal human trait becomes _absolutely crucial_. Unlike physical engineering where you can point to concrete objects, programming deals entirely with _mental constructs_ and _abstract concepts_. We can't touch or see our constructs directly – we can only refer to them by name. Almost all concepts programming languages provide to create [abstractions](../abstractions) have one really important thing in common. They all have the ability to _name_ the abstraction. This is among others true for _variables_, _functions_, _classes_ and _namespaces_.
 
@@ -18,5 +18,5 @@ For many problem domains there does not exist a good and stringent enough _nomen
 
 > By putting more effort into _naming_ you can avoid a lot of _trouble_ and _refactoring_ later.
 
-Getting _naming_ right is one of the really _hard parts_ of programming. It is at the core of why it sometimes is easier to _start over_ from scratch than to incrementally improve code written by others. By putting more effort into the naming you can avoid a lot of trouble and refactoring later.`),
+Getting _naming_ right is one of the really _hard parts_ of programming. It is at the core of why it sometimes is easier to _start over_ from scratch than to incrementally improve code written by others. By putting more effort into the naming you can avoid a lot of trouble and refactoring later.`)
 }

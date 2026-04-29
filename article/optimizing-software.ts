@@ -5,8 +5,8 @@ export const optimizingSoftware: binotype.Site.Page = {
 	published: "2016-11-24T08:15:46+02:00",
 	tags: ["software optimization", "performance"],
 	title: "Optimizing Software",
-	content: new showdown.Converter()
-		.makeHtml(`Many programmers, especially those early in their careers, focus heavily on optimizing their code for _execution speed_. They do this because they take pride in their work and want to do it well - which is admirable. However, when programmers optimize for speed, they often get it wrong, particularly when applying _theoretical concepts_ learned in university algorithm courses.
+	content:
+		new showdown.Converter().makeHtml(`Many programmers, especially those early in their careers, focus heavily on optimizing their code for _execution speed_. They do this because they take pride in their work and want to do it well - which is admirable. However, when programmers optimize for speed, they often get it wrong, particularly when applying _theoretical concepts_ learned in university algorithm courses.
 
 > Most attempts at optimizing for speed end up being _counterproductive_.
 
@@ -52,5 +52,5 @@ Remember: _premature optimization_ is the root of all evil. Before optimizing an
 3. _Profiling data_ to identify bottlenecks
 
 Focus first on writing _clear, maintainable code_. Only optimize when you have _evidence_ that a specific part of your code is causing performance issues. Your future self (and your colleagues) will thank you.
-`),
+`)
 }

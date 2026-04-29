@@ -5,8 +5,8 @@ export const takingRiskWhenDying: binotype.Site.Page = {
 	published: "2017-08-23T09:15:00+02:00",
 	tags: ["startup"],
 	title: "Taking Risk When Dying",
-	content: new showdown.Converter()
-		.makeHtml(`In the beginning, most startups are like _fatally ill patients_. They are companies _without a business_.
+	content:
+		new showdown.Converter().makeHtml(`In the beginning, most startups are like _fatally ill patients_. They are companies _without a business_.
 
 > A startup without product-market fit is like a patient without a cure – both are fighting against time.
 
@@ -18,5 +18,5 @@ A startup which has not yet achieved _product-market fit_ in a market big enough
 
 This is why startups in this phase _need to take risks_. If they don't, they die. But they should always take _calculated_ risks. Try a _small dose_ of the untested drug and look for signs of improvement in the patient's health. If there are none, then keep trying others. Once you think you've found the cure, _stop all other experiments_ and take the _full dose_. There's no way to take a half dose and become half cured, so _bet everything_ on it and don't hold back. You can consider revisiting your pet ideas once the patient is _actually cured_.
 
-`),
+`)
 }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { model } from "../src/model"
+import { binotype } from "@binotype/model"
 import { site } from "./index"
 
 describe("simonmika-com", () => {
@@ -12,6 +12,6 @@ describe("simonmika-com", () => {
 		"/about",
 		"/contact",
 		"/talks",
-		"/non-existent",
-	] as const)("model.Context.load(%s)", path => expect(model.Context.load(site, path)).toMatchSnapshot())
+		"/non-existent"
+	] as const)("binotype.Context.load(%s)", path => expect(binotype.Context.load(site, path)).toMatchSnapshot())
 })
