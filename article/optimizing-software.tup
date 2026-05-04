@@ -1,12 +1,8 @@
-import showdown from "showdown"
-import { binotype } from "@binotype/model"
+published = 2016-11-24T08:15:46+02:00
+tags = ["software optimization", "performance"]
+title = Optimizing Software
 
-export const optimizingSoftware: binotype.Site.Page = {
-	published: "2016-11-24T08:15:46+02:00",
-	tags: ["software optimization", "performance"],
-	title: "Optimizing Software",
-	content:
-		new showdown.Converter().makeHtml(`Many programmers, especially those early in their careers, focus heavily on optimizing their code for _execution speed_. They do this because they take pride in their work and want to do it well - which is admirable. However, when programmers optimize for speed, they often get it wrong, particularly when applying _theoretical concepts_ learned in university algorithm courses.
+Many programmers, especially those early in their careers, focus heavily on optimizing their code for _execution speed_. They do this because they take pride in their work and want to do it well - which is admirable. However, when programmers optimize for speed, they often get it wrong, particularly when applying _theoretical concepts_ learned in university algorithm courses.
 
 > Most attempts at optimizing for speed end up being _counterproductive_.
 
@@ -17,7 +13,7 @@ But why is performance optimization so challenging?
 ## Code locality
 > Only optimize the parts of the code base you know are critical for _perceived performance_.
 
-Most programs spend _80-90%_ of their execution time in just _10-20%_ of their code (this is known as the _90/10 rule_ or the _Pareto principle_ applied to performance). Optimizing code outside these _critical paths_ rarely yields noticeable improvements. Therefore, focus your optimization efforts only on the parts of your codebase that _profiling_ shows are critical for perceived performance.
+Most programs spend _80-90\%_ of their execution time in just _10-20\%_ of their code (this is known as the _90/10 rule_ or the _Pareto principle_ applied to performance). Optimizing code outside these _critical paths_ rarely yields noticeable improvements. Therefore, focus your optimization efforts only on the parts of your codebase that _profiling_ shows are critical for perceived performance.
 
 ## Data locality
 > How our algorithms _access memory_ often has a bigger impact on performance than CPU optimizations.
@@ -52,5 +48,3 @@ Remember: _premature optimization_ is the root of all evil. Before optimizing an
 3. _Profiling data_ to identify bottlenecks
 
 Focus first on writing _clear, maintainable code_. Only optimize when you have _evidence_ that a specific part of your code is causing performance issues. Your future self (and your colleagues) will thank you.
-`)
-}

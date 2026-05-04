@@ -1,47 +1,8 @@
 {
 	"name": "@simonmika/website",
-	"version": "1.2.0",
-	"license": "UNLICENSED",
+	"version": "2.0.0-beta.0",
 	"private": true,
 	"description": "Website for Simon Mika, built with Binotype Site",
-	"type": "module",
-	"main": "dist/index.cjs.js",
-	"module": "dist/index.js",
-	"es2015": "dist/esm/index.js",
-	"es2017": "dist/esm/index.js",
-	"types": "dist/components/index.d.ts",
-	"collection": "dist/collection/collection-manifest.json",
-	"collection:main": "dist/collection/index.js",
-	"unpkg": "dist/binotype/binotype.esm.js",
-	"exports": {
-		".": {
-			"import": "./dist/components/index.js",
-			"types": "./dist/components/index.d.ts"
-		},
-		"./components": {
-			"import": "./dist/components/index.js",
-			"types": "./dist/components/index.d.ts"
-		},
-		"./binotype-site": {
-			"import": "./dist/components/binotype-site.js",
-			"types": "./dist/components/binotype-site.d.ts"
-		},
-		"./collection": {
-			"import": "./dist/collection/index.js",
-			"types": "./dist/collection/index.d.ts"
-		},
-		"./hydrate": {
-			"import": "./dist/hydrate/index.js",
-			"types": "./dist/hydrate/index.d.ts"
-		},
-		"./loader": {
-			"import": "./dist/loader/index.js",
-			"types": "./dist/loader/index.d.ts"
-		}
-	},
-	"files": [
-		"dist/"
-	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/simonmika/website.git"
@@ -51,48 +12,36 @@
 	},
 	"homepage": "https://github.com/simonmika/website/",
 	"scripts": {
-		"build": "stencil build",
-		"start": "stencil build --dev --watch --serve",
-		"preserve": "npm run build",
-		"serve": "http-server www -c-1",
-		"test": "vitest --run",
-		"coverage": "vitest --coverage",
-		"test.watch": "vitest --watch",
-		"generate": "stencil generate",
 		"lint": "biome format .",
 		"format": "biome format --write .",
-		"verify": "npm run lint && npm run build && npm run test"
+		"build": "stencil build --prerender",
+		"start": "stencil build --prerender --dev --watch --serve",
+		"serve": "http-server www --cors",
+		"test": "vitest --run",
+		"coverage": "vitest --coverage",
+		"generate": "stencil generate"
 	},
 	"devDependencies": {
-		"@stencil/core": "^4.43.4",
+		"@biomejs/biome": "2.4.13",
+		"@stencil/core": "4.43.4",
 		"@stencil/sass": "^3.2.3",
-		"@stencil/vitest": "^1.11.6",
-		"@types/node": "^25.6.0",
-		"@types/showdown": "^2.0.6",
 		"@vitest/coverage-v8": "4.1.5",
-		"happy-dom": "^20.9.0",
 		"http-server": "^14.1.1",
-		"jsdom": "^29.1.0",
-		"sass": "1.99.0",
+		"rollup-plugin-string-import": "^1.2.6",
 		"stencil-inline-svg": "^1.1.0",
-		"stencil-router-v2": "^0.6.0",
-		"typescript": "6.0.3",
-		"unplugin-stencil": "^0.4.1",
 		"vite": "8.0.10",
-		"vitest": "4.1.5",
-		"@biomejs/biome": "2.4.13"
+		"vitest": "4.1.5"
 	},
+	"license": "MIT",
 	"dependencies": {
-		"@binotype/model": "^2.0.0-beta.1",
+		"@binotype/model": "^2.0.0-beta.3",
+		"@types/node": "^25.6.0",
 		"@typeup/dom": "^1.0.11-beta.3",
-		"@typeup/parser": "^1.2.5-beta.2",
+		"@typeup/parser": "^1.2.5-beta.3",
 		"isly": "^1.9.0",
 		"isoly": "^3.1.8",
 		"showdown": "^2.1.0",
 		"tidily": "^0.2.7",
 		"yuml2svg": "^5.0.1"
-	},
-	"peerDependencies": {
-		"@stencil/core": ">=4.0.0"
 	}
 }

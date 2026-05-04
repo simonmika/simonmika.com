@@ -8,16 +8,7 @@
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"includes": [
-			"**",
-			"!**/*.js",
-			"!!coverage",
-			"!!dist",
-			"!!node_modules",
-			"!!transpiled",
-			"!design/style/reset.css",
-			"!src/components.d.ts"
-		]
+		"includes": ["**", "!**/*.js", "!!coverage", "!!dist", "!!node_modules", "!!transpiled"]
 	},
 	"formatter": {
 		"indentStyle": "tab",

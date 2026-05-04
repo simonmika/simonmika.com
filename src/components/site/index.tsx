@@ -1,19 +1,20 @@
-import { Component, h, Host } from "@stencil/core"
+import { Component, ComponentWillLoad, h, Host, State, VNode } from "@stencil/core"
 import { site } from "../../../index"
-// import * as binotype from "../binotype"
-// import { Footer } from "../Footer"
+import { binotype } from "@binotype/model"
+import * as components from "../binotype"
+import { Footer } from "../Footer"
 
-// binotype.Footer.override = Footer
+components.Footer.override = Footer
 @Component({ tag: "simonmika-site", styleUrl: "style.css" })
-export class SimonmikaSite {
-	async render() {
-		console.log("rendering site", await site())
+export class SimonmikaSite implements ComponentWillLoad {
+	@State() site?: binotype.Site<VNode>
+	async componentWillLoad() {
+		this.site = await site()
+	}
+	render() {
 		return (
 			<Host>
-				Text
-				<h1>Header</h1>
-				<div>Division</div>
-				{/* <binotype-site site={await site()}></binotype-site> */}
+				<binotype-site site={this.site} debug></binotype-site>
 			</Host>
 		)
 	}

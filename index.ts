@@ -1,13 +1,15 @@
 import { binotype } from "@binotype/model"
-import { about } from "./about"
-// import { article } from "./article"
-// import { contact } from "./contact"
-// import { description } from "./description"
+import { parser } from "./src/components/binotype/parser"
+import about from "./about.tup"
+import { article } from "./article"
+import contact from "./contact.tup"
+import description from "./description.tup"
 import { design } from "./design"
-// import { subscribe } from "./subscribe"
-// import { talk } from "./talk"
+import { VNode } from "@stencil/core"
+import subscribe from "./subscribe.tup"
+import { talk } from "./talk"
 
-export async function site(): Promise<binotype.Site | undefined> {
+export async function site(): Promise<binotype.Site<VNode> | undefined> {
 	return {
 		url: "https://simonmika.com",
 		language: "en-US",
@@ -20,13 +22,13 @@ export async function site(): Promise<binotype.Site | undefined> {
 		design,
 		page: {
 			pages: {
-				// article,
-				// talk,
-				about: await about()
-				// contact,
-				// description,
-				// subscribe,
+				article: await article(),
+				talk: await talk(),
+				about: await parser.parse(about, "about"),
+				contact: await parser.parse(contact, "contact"),
+				description: await parser.parse(description, "description"),
+				subscribe: await parser.parse(subscribe, "subscribe")
 			}
-		}
+		} satisfies binotype.Page<VNode>
 	}
 }

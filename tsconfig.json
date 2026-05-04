@@ -22,7 +22,7 @@
 		"jsx": "react",
 		"jsxFactory": "h",
 		"jsxFragmentFactory": "h.Fragment",
-		"types": ["node", "vitest/globals"]
+		"types": ["./tup.d.ts", "vitest/globals"]
 	},
 	"include": ["src", "index.ts", "**/*.spec.{ts,tsx,js,jsx}"],
 	"exclude": ["coverage", "dist", "node_modules"]
